@@ -12,5 +12,7 @@ how to use?
 {
 name:{girl:rachel,boy:colin}
 }
-```  so, you can use this to fill your html
+``` 
+
+so, you can use this to fill your html
 3.{`#keyName`} this is for loop . your json object should like this {city:[{food:banana,visit:2},{food:apple,visitL3}]}
