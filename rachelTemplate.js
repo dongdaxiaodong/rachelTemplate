@@ -25,7 +25,7 @@ function rachelTemplate(){
             //获取temp_last前面的所有字符串
             var temp_last_str=temp.substring(0,temp_last)
             //判断是否是循环
-            if(temp_last_str.indexOf('#')>0){
+            if(temp_last_str.indexOf('#`')>0){
                 //是循环,谨记  返回的是这次分割后的字符串
                 //应该分为三步，一是获取循环块前的String,二是获取循环中的String,三是获取循环后的模板中是String
                 //获取循环块前的String
