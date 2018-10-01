@@ -7,6 +7,8 @@ you can cody rachelTemplate.js and link it to your html file so that you can use
 
 how to use?
 1. {`keyName`}  keyName is the object's key .  and rachelTemplate can converse {`keyName`} to value.
+
+
 2.{`keyName1.keyName2`} if your json object is likes this 
 ```
 {
@@ -15,4 +17,6 @@ name:{girl:rachel,boy:colin}
 ``` 
 
 so, you can use this to fill your html
+
+
 3.{`#keyName`} this is for loop . your json object should like this {city:[{food:banana,visit:2},{food:apple,visitL3}]}
