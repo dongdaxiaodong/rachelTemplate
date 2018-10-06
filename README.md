@@ -2,10 +2,10 @@
 
 **rachelTemplate is a easy but powerful javascript template engine. and users just need to use one function to build their page。**
 
-*****
-**
-you can cody rachelTemplate.js and link it to your html file so that you can use the mini template engine.
-**
+-----
+**you can cody rachelTemplate.js and link it to your html file so that you can use the mini template engine.**
+
+
 [website](https://dongdaxiaodong.github.io/rachelTemplate/)
 ----
 how to use?
