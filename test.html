@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="rachel_template.js"></script>
+</head>
+<body>
+<div>
+<div id="old_tem" style="float: left">
+    <h1>{`name`}</h1>
+    <h2>{`age`}</h2>
+    <div>{`people.colin`}</div>
+    {`!if_girl`}<div> i can do it</div>{`!if`}
+    {`if_classes`}<div>this is my window<label>{`first`}</label>
+    <label>{`second`}</label></div>{`if`}
+    {`for_loves`}<div>{`person`} and also {`food`}</div>{`for`}
+</div>
+<div id="new_tem" style="float: right"></div>
+    <button type="button" onclick="switch_tem()">转换</button></div>
+<script type="text/javascript">
+    function switch_tem(){
+        let old_template=document.getElementById('old_tem').innerHTML
+        let new_template=rachel.render_template(old_template,{loves:[{person:'rachel',food:"banana"},{person:"colin",food:"apple"}],classes:{first:"math",second:"chinese"},name:"colin",age:"18",people:{colin:33},girl:""})
+        document.getElementById('new_tem').innerHTML=new_template
+    }
+
+    </script>
+</body>
+</html>
