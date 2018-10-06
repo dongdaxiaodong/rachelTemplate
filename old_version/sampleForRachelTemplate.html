@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a example for rachel template</title>
+    <style>
+
+        </style>
+    <script src="rachelTemplate.js"></script>
+</head>
+<body>
+<div id="div_2">
+<p>
+    i want to be {`name.boy`}
+</p>
+{`name.girl`} is beautiful
+<h2> and i can do every this{`girl`}</h2>
+{`#city`}
+    <p>i like {`eat`} and {`fruit`}</p>
+    {`#`}
+</div>
+<div id="div_1"></div>
+<button onclick="getitoutput()">click</button>
+
+<script type="text/html" id="tem_1">
+    <p>
+        i want to be {`name.boy`}
+    </p>
+    {`name.girl`} is beautiful
+    <h2> and i can do every this{`girl`}</h2>
+    {`#city`}
+    <p>i like {`eat`} and {`fruit`}
+    {`#`}
+
+</script>
+<script type="text/javascript">
+    function getitoutput(){
+        var tem_1=document.getElementById('div_2').innerHTML
+        var conObj={
+            name:{
+                boy:"colin",
+                girl:"andy"
+            },
+            girl:"rachel",
+            city:[{eat:"baozi",fruit:"orange"},{eat:"manzou",fruit:"banana"}]
+        }
+        var new_tem_1=rachel.renderTem(tem_1,conObj)
+        document.getElementById('div_2').innerHTML=new_tem_1
+    }
+    rachel.renderTem()
+
+
+
+</script>
+</body>
+</html>
